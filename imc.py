@@ -1,11 +1,12 @@
 def linhas():
-    print("-----------------------------")
+    print("-" * 29)
 
 linhas()
-print("  Vamos calcular o seu IMC!")
+print("Vamos calcular o seu IMC!".center(29))
 linhas()
+
 peso = float(input("Digite seu peso em kg: "))
-altura = float(input("Digite sua altura em metros (Ex.: 1.75): "))
+altura = float(input("Digite sua altura (ex.: 1.75): "))
 imc = peso / (altura ** 2)
 
 categorias = [
